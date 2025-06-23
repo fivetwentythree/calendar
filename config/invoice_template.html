@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: sans-serif; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ccc; padding: 4px; text-align: left; }
+    </style>
+</head>
+<body>
+    <h1>Invoice for {{ property }}</h1>
+    <p>Month: {{ month }}</p>
+    <table>
+        <tr><th>Hours</th><th>Rate</th><th>Total</th></tr>
+        <tr>
+            <td>{{ hours }}</td>
+            <td>${{ rate }}</td>
+            <td>${{ total }}</td>
+        </tr>
+    </table>
+</body>
+</html>
